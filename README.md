@@ -40,7 +40,7 @@ D:\flask\HospitalManagement> cd venv/Scripts/activate
 
 After venv is activated
 
-(venv) D:\flask\Retail-Banking>
+(venv) D:\cd ../../..>
 
 ```
 4. Install all the required libraries for the application
