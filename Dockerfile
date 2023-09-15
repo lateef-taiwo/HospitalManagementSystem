@@ -13,4 +13,4 @@ ENV FLASK_ENV=development
 # expose port for binding 
 EXPOSE ${PORT}
 # Run this command to build the container image to run on port 5000
-CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=5000"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0", "--port=5000", "-T"]
