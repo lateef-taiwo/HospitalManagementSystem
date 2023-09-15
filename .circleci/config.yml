@@ -12,9 +12,12 @@ jobs:
           command: |
             version="build-$CIRCLE_BUILD_NUM"
             echo $version
+            python -m venv myenv  # Create a new virtual environment
+            source myenv/bin/activate  # Activate the virtual environment
             docker build -t savytech/hospital_management_app:$version .
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
             docker push savytech/hospital_management_app:$version
+            deactivate  # Deactivate the virtual environment
 
   Update_manifest:
     docker:
