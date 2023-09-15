@@ -1,12 +1,12 @@
 # Build the image from python:3.10-slim-buster
 FROM python:3.10-slim-buster
-# make and change directory inside the container image to /backend-flask
+# make and change directory inside the container image to /app
 WORKDIR /app
 # Copy requirements.txt from host to container image
 COPY requirements.txt requirements.txt
 # use pip to install the dependencies stated in requirements.txt
 RUN pip install -r requirements.txt
-# copy everything from the cuurent directory in the host to the current directory (/backend-flask) in the container image
+# copy everything from the cuurent directory in the host to the current directory in the container image
 COPY . .
 # set env var
 ENV FLASK_ENV=development
