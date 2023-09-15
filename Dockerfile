@@ -8,7 +8,7 @@ COPY requirements.txt requirements.txt
 
 # Create and activate a virtual environment
 RUN python -m venv myenv 
-RUN source myenv/bin/activate
+RUN . myenv/bin/activate
 
 RUN pip install -r requirements.txt
 # copy everything from the cuurent directory in the host to the current directory in the container image
