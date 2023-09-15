@@ -12,9 +12,10 @@ jobs:
           command: |
             version="build-$CIRCLE_BUILD_NUM"
             echo $version
-            docker build -t savytech/hospital_management_app:build-2 .
+            docker build -t savytech/hospital_management_app:$version .
+            docker run -t savytech/hospital_management_app:$version
             echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
-            docker push savytech/hospital_management_app:build-2
+            docker push savytech/hospital_management_app:$version
 
   Update_manifest:
     docker:
