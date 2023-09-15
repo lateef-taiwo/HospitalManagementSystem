@@ -5,6 +5,11 @@ WORKDIR /app
 # Copy requirements.txt from host to container image
 COPY requirements.txt requirements.txt
 # use pip to install the dependencies stated in requirements.txt
+
+# Create and activate a virtual environment
+RUN python -m venv myenv 
+RUN source myenv/bin/activate
+
 RUN pip install -r requirements.txt
 # copy everything from the cuurent directory in the host to the current directory in the container image
 COPY . .
