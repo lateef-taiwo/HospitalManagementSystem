@@ -52,12 +52,8 @@ After venv is activated
 5. To run the code
 ```sh
 
-D:\flask\Retail-Banking>flask run
+D:\flask\HospitalManagement> flask run
 
 ```
 6. thats it..!!
-
-## hosted on heroku : http://buerocarehospital.herokuapp.com
-
-
 
