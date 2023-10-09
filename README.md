@@ -43,8 +43,10 @@ D:\flask\HospitalManagement> source venv/Scripts/activate
 ```
 After venv is activated
 
-(venv) D:\flask\HospitalManagement
+```sh
 
+(venv) D:\flask\HospitalManagement
+```
 
 4. Install all the required libraries for the application
 
