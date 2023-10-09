@@ -33,12 +33,15 @@ Follow the installation steps to open project without error
 python -m venv venv
 
 ```
-3. check if venv is activated
-   cd venv/Scritps
-You should a file with name "activate"
-```sh
+
+Activate virtual env
+
+D:\flask\HospitalManagement> source venv/Scripts/activate
 
 After venv is activated
+
+(venv) D:\flask\HospitalManagement
+
 
 ```
 4. Install all the required libraries for the application
