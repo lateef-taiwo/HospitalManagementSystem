@@ -33,7 +33,9 @@ Follow the installation steps to open project without error
 python -m venv venv
 
 ```
-3. activate virtual env
+3. check if venv is activated
+   cd venv/Scritps
+You should a file with name "activate"
 ```sh
 
 After venv is activated
