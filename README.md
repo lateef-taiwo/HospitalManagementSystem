@@ -34,7 +34,7 @@ python -m venv venv
 
 ```
 
-Activate virtual env
+3. Activate virtual env
 
 D:\flask\HospitalManagement> source venv/Scripts/activate
 
@@ -43,18 +43,16 @@ After venv is activated
 (venv) D:\flask\HospitalManagement
 
 
-```
 4. Install all the required libraries for the application
-```sh
+
 
  pip install -r requirements.txt
 
-```
+
 5. To run the code
-```sh
+
 
 D:\flask\HospitalManagement> flask run
 
-```
-6. thats it..!!
+thats it..!!
 
