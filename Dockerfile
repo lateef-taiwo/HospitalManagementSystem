@@ -9,7 +9,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 # copy everything from the cuurent directory in the host to the current directory in the container image
 COPY . .
-# set env var
+# set environment variable
 ENV FLASK_ENV=development
 # expose port for binding 
 EXPOSE ${PORT}
